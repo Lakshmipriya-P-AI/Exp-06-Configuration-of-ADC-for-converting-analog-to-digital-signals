@@ -1,19 +1,16 @@
 # Exp-06-Configuration-of-ADC-for-converting-analog-to-digital-signals
 
+## Name : Lakshmi priya	
+## Roll no: 212221230053
+## Date of experiment : 5.11.22
 
-## Name :	
-## Roll no:
-## Date of experiment : 
-  
-  
-## Aim: To configure internal ADC for   LPC2148 ARM 7 and write a code for displaying the values varying from 0v to 3.3v to its equivalent digital values 
+## Aim:
+To configure internal ADC for   LPC2148 ARM 7 and write a code for displaying the values varying from 0v to 3.3v to its equivalent digital values 
 ## Components required: Proteus ISIS professional suite, Kiel μ vision 5 Development environment 
  
  ![image](https://user-images.githubusercontent.com/36288975/198947663-2d75f694-880a-4bc0-be67-8c2d4125fdb6.png)
 
 Figure-01 ADC pins in LPC2148 ARM 7 controller 
-
-
  ## Theory 
 Analog to Digital Converter (ADC) is used to convert analog signal into digital form. LPC2148 has two inbuilt 10-bit ADC i.e. ADC0 & ADC1.
 •	ADC0 has 6 channels &ADC1 has 8 channels.
@@ -162,9 +159,7 @@ This bit is cleared by reading this register.
 •	Bit 31 – DONE
 This bit is set to 1 when an A/D conversion completes. It is cleared when this register is read.
  
-
-
-Procedure:
+## Procedure:
 Steps for Analog to Digital Conversion
 1.	Configure the ADxCR (ADC Control Register) according to the need of application.
 2.	Start ADC conversion by writing appropriate value to START bits in ADxCR. (Example, writing 001 to START bits of the register 26:24, conversion is started immediately).
@@ -203,34 +198,25 @@ int main()
 }
 ```
 
-## Tabulations and graph 
-SL NO	% OF POT VALUE	ADC VALUE
-1		
-2		
-3		
-4		
-5		
-6		
-7		
-8		
-9		
-10		
+## Tabulations
+	
+![200153116-aece4261-7c63-4762-bd39-d749af139bde](https://user-images.githubusercontent.com/93427923/200321557-e7ec74ac-1149-45f1-988e-b4200b6b435b.png)
 
- ![image](https://user-images.githubusercontent.com/36288975/198947184-dbccf4b1-10a1-4090-a670-93526ed6e597.png)
+## Graph
+ ![200153138-72b50344-d65a-41e9-9c59-66457e0bfeaa](https://user-images.githubusercontent.com/93427923/200321677-d733d917-27fb-428b-a7df-9fb66003baba.png)
 
-
-
- 
 Figure -09 graph between % of pot(1Kohm) values and ADC 
 
+## Output screen shots :
+### Before Stimulation:
+![WhatsApp Image 2022-11-07 at 18 48 15](https://user-images.githubusercontent.com/93427923/200321894-fa41c9d9-b79b-41e9-8447-8d2e62b52a7a.jpg)
 
-Result :
+### After Stimulation:
+![image](https://user-images.githubusercontent.com/93427923/200322023-67f1c8d4-b2cb-4e76-ba1f-6e8f70b904b4.png)
+
+### Circuit Diagram:
+![image](https://user-images.githubusercontent.com/93427923/200322284-85ea6e50-0195-4590-b7e5-a7e6ee6a1e4e.png)
+
+## Result :
 Configuring an ADC and the input values are displayed on LCD screen 
-
-Output screen shots :
-
-
-
-
-
 
